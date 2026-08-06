@@ -246,7 +246,13 @@ body {
   color: var(--text);
 }
 
-/* Project card */
+/* Project cards */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
 
 .project-card {
   background: var(--card-bg);
@@ -254,6 +260,13 @@ body {
   border-radius: var(--radius);
   padding: 28px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .project-card h3 {
